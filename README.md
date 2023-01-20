@@ -5,29 +5,94 @@
 To design a website to perform mathematical calculations in server side.
 
 # DESIGN STEPS:
+Step 1:
+Clone the repository from GitHub.
 
-## Step 1:
+Step 2:
+Create Django Admin project.
 
+Step 3:
+Create a New App.
 
+Step 4:
+Create python programs for views.py and urls.py .
 
-## Step 2:
+Step 5:
+create a HTML file of forms.
 
-
-
-## Step 3:
-
-
-## Step 4:
-
-
-
-## Step 5:
-
+Step 6:
+Publish the website in the given URL.
 
 
 # PROGRAM:
-
+```html
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Area of Rectangle</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<style type="text/css">
+body 
+{
+background-color:cyan;
+}
+.edge {
+width: 1080px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 150px;
+padding-left: 500px;
+}
+.box {
+display:block;
+border: Thick dashed lime;
+width: 500px;
+min-height: 300px;
+font-size: 20px;
+background-color:rgb(65, 207, 22);
+}
+.formelt{
+color: rgb(31, 74, 190);
+text-align: center;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+h1
+{
+color: orangered;
+text-align: center;
+padding-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="edge">
+<div class="box">
+<h1>Area of a Rectangle</h1>
+<form method="POST">
+{% csrf_token %}
+<div class="formelt">
+Length : <input type="text" name="length" value="{{l}}"></input>(in m)<br/>
+</div>
+<div class="formelt">
+Breadth : <input type="text" name="breadth" value="{{b}}"></input>(in m)<br/>
+</div>
+<div class="formelt">
+<input type="submit" value="Calculate"></input><br/>
+</div>
+<div class="formelt">
+Area : <input type="text" name="area" value="{{area}}"></input>m<sup>2</sup><br/>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+```
 # OUTPUT:
+![213514205-da5f5704-70e5-4eee-9585-8a072592546e](https://user-images.githubusercontent.com/118707265/213650965-3ffef45a-64e6-4a7b-b02a-25e9e7518386.png)
+
 
 # RESULT:
 
